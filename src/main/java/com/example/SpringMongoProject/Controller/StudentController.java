@@ -43,7 +43,7 @@ public class StudentController {
 
     }
 
-    @RequestMapping("/searcht/{id}")
+    @RequestMapping("/search/{id}")
     private Student getStudent(@PathVariable(name="id")String studentid)
     {
         return studentServices.getStudentById(studentid);
